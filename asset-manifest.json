@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/pokemon-react-play/static/css/main.e4c4d948.chunk.css",
-    "main.js": "/pokemon-react-play/static/js/main.0eea7f85.chunk.js",
-    "main.js.map": "/pokemon-react-play/static/js/main.0eea7f85.chunk.js.map",
+    "main.js": "/pokemon-react-play/static/js/main.19497bfb.chunk.js",
+    "main.js.map": "/pokemon-react-play/static/js/main.19497bfb.chunk.js.map",
     "runtime~main.js": "/pokemon-react-play/static/js/runtime~main.877a98b9.js",
     "runtime~main.js.map": "/pokemon-react-play/static/js/runtime~main.877a98b9.js.map",
     "static/css/2.e8d046a2.chunk.css": "/pokemon-react-play/static/css/2.e8d046a2.chunk.css",
     "static/js/2.2af414fa.chunk.js": "/pokemon-react-play/static/js/2.2af414fa.chunk.js",
     "static/js/2.2af414fa.chunk.js.map": "/pokemon-react-play/static/js/2.2af414fa.chunk.js.map",
     "index.html": "/pokemon-react-play/index.html",
-    "precache-manifest.cdfd9f9e6dadb2860f538a7cc2d5b546.js": "/pokemon-react-play/precache-manifest.cdfd9f9e6dadb2860f538a7cc2d5b546.js",
+    "precache-manifest.a94559484d598e42f036b325a45a5e74.js": "/pokemon-react-play/precache-manifest.a94559484d598e42f036b325a45a5e74.js",
     "service-worker.js": "/pokemon-react-play/service-worker.js",
     "static/css/2.e8d046a2.chunk.css.map": "/pokemon-react-play/static/css/2.e8d046a2.chunk.css.map",
     "static/css/main.e4c4d948.chunk.css.map": "/pokemon-react-play/static/css/main.e4c4d948.chunk.css.map"
