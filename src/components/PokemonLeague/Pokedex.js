@@ -127,7 +127,7 @@ const Pokedex = () => {
         }
         {
           !pokemons.byId[searchedId] &&
-            <Row align="middle" justify="center" type="flex" style={{minHeight: '300px'}}>
+            <Row align="middle" justify="center" type="flex" style={{minHeight: '500px'}}>
               <Col span={24} align="center">
                 <h1>POKEDEX</h1>
                 <p>Search your best pokemons and add them to your lineup</p>
