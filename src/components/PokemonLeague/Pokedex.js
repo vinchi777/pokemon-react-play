@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { pokemonActions } from 'modules/entities/pokemons';
-import { Alert, Typography, notification, Progress, Tag, Row, Col, Input, Button, Spin, Avatar } from 'antd';
+import { Alert, notification, Progress, Tag, Row, Col, Input, Button, Spin, Avatar } from 'antd';
 import { pokemonSelectors } from 'modules/entities/pokemons';
+import { pageActions } from 'modules/pages/pokemonLeague';
 import 'styles/pokedex.css';
 
 const { Search } = Input;
@@ -19,6 +20,11 @@ const Pokedex = () => {
     dispatch(pokemonActions.search(name))
       .then((pokemon) => {
         setSearchedId(pokemon.id);
+      })
+      .catch(e => {
+        console.log(e)
+        let msg = e.response.status === 404 ? "Pokemon Not Found" :  "Something went wrong";
+        alert('error', msg);
       })
       .finally(_ => {
         setLoading(false);
@@ -38,7 +44,8 @@ const Pokedex = () => {
   const unregister = () => {
     const pokemon = pokemons.byId[searchedId]
     pokemon['registered'] = false;
-    dispatch(pokemonActions.setItem({ [pokemon.id]: pokemon }))
+    dispatch(pokemonActions.setItem({ [pokemon.id]: pokemon }));
+    dispatch(pageActions.preview(null));
   }
 
   const alert = (type, msg) => {
@@ -113,6 +120,7 @@ const Pokedex = () => {
             <Col span={24} style={{ margin: "30px 0px", textAlign: "center" }}>
               { !pokemons.byId[searchedId]["registered"] && <Button onClick={register} size="large" type="primary" block> Add to Lineup</Button> }
               { pokemons.byId[searchedId]["registered"] && <Alert message="Added to Lineup" type="success"/> }
+              { pokemons.byId[searchedId]["registered"] && <Button style={{ marginTop: "10px" }} onClick={unregister} type="danger" ghost> Remove </Button> }
             </Col>
           </Row>
         }

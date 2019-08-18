@@ -13,7 +13,6 @@ const Lineup = () => {
   const numberOfCards = 6;
 
   const preview = (id) => {
-    console.log(id)
     dispatch(pageActions.preview(id))
   }
 
@@ -27,7 +26,7 @@ const Lineup = () => {
               <Card
                 hoverable
                 bordered
-                className={ (pageState.currentPreview && pageState.currentPreview == id) ? "active" : "" }
+                className={ (pageState.currentPreview && pageState.currentPreview === id) ? "active" : "" }
                 onClick={ () => preview(id) }
               >
                 <img alt="example" src={ pokemons.byId[id].sprites.front_default } width="100%"/>

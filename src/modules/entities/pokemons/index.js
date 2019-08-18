@@ -1,6 +1,5 @@
 import reducer from "./reducers";
 
-export { default as pokemonApi } from "./api";
 export { default as pokemonActions } from "./actions";
 export { default as pokemonTypes } from "./types";
 export { default as pokemonSelectors } from "./selectors";

@@ -3,7 +3,7 @@ import { Layout, Row, Col } from 'antd';
 import Pokedex from './Pokedex';
 import Lineup from './Lineup';
 import Preview from './Preview';
-import './style.css';
+import 'styles/layout.css';
 
 const { Header, Content } = Layout;
 
