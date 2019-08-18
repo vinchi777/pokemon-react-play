@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { pokemonActions } from 'modules/entities/pokemons';
-import { Alert, notification, Progress, Tag, Row, Col, Input, Button, Spin, Avatar } from 'antd';
+import { Divider, Card, Alert, notification, Progress, Tag, Row, Col, Input, Button, Spin, Avatar } from 'antd';
 import { pokemonSelectors } from 'modules/entities/pokemons';
 import { pageActions } from 'modules/pages/pokemonLeague';
 import 'styles/pokedex.css';
@@ -55,7 +55,7 @@ const Pokedex = () => {
   }
 
   return (
-    <div className="pokedex-wrapper">
+    <Card className="pokedex-wrapper">
       <Search
         placeholder="search a pokemon"
         enterButton
@@ -68,9 +68,10 @@ const Pokedex = () => {
         { pokemons.byId[searchedId] &&
           <Row type="flex" justify="center" style={{marginTop: '20px'}}>
             <Col span={24} align="center">
-              <Avatar src={ pokemons.byId[searchedId].sprites.front_default } size={128} style={{ backgroundColor: 'white' }}/>
+              <Avatar src={ pokemons.byId[searchedId].sprites.front_default } size={128} style={{ backgroundColor: '#eee' }}/>
               <h1 className="pokemon-name">{ pokemons.byId[searchedId].name }</h1>
             </Col>
+            <Divider />
             <Col span={24} className="pokemon-details">
               <h1>Details</h1>
               <Col span={12}>
@@ -134,7 +135,7 @@ const Pokedex = () => {
             </Row>
         }
       </Spin>
-    </div>
+    </Card>
   )
 };
 

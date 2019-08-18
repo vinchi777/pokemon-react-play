@@ -29,7 +29,7 @@ const Lineup = () => {
                 className={ (pageState.currentPreview && pageState.currentPreview === id) ? "active" : "" }
                 onClick={ () => preview(id) }
               >
-                <img alt="example" src={ pokemons.byId[id].sprites.front_default } width="100%"/>
+                <img alt="example" src={ pokemons.byId[id].sprites.front_default } width="100%" style={{ maxHeight: "193px" }}/>
               </Card>
             </Col>
 

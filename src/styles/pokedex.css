@@ -15,5 +15,5 @@
 }
 
 .pokedex-wrapper .pokemon-name {
-  text-transform: uppercase;
+  text-transform: capitalize;
 }

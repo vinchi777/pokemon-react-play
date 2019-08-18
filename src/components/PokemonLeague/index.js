@@ -16,11 +16,11 @@ const PokemonLeague = () => {
       <Layout>
         <Content style={{ padding: '30px 50px' }}>
           <Row>
-            <Col span={14} className="lineup-preview-container" style={{ padding: '0px 50px' }}>
+            <Col span={14} className="lineup-preview-container" style={{ padding: '0px 30px 0px 50px' }}>
               <Lineup />
               <Preview />
             </Col>
-            <Col span={10} className="pokedex-container" style={{ padding: '0px 50px' }}>
+            <Col span={10} className="pokedex-container" style={{ padding: '0px 50px 0px 30px' }}>
               <Pokedex />
             </Col>
           </Row>
