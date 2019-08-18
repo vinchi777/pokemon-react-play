@@ -1,7 +1,5 @@
 export const RECEIVE_POKEMON = 'RECEIVE_POKEMON';
 
-export const REMOVE_POKEMON = 'REMOVE_POKEMON';
-
 export const RECEIVE_POKEMONS = 'RECEIVE_POKEMONS';
 
 const defaultState = {
