@@ -16,14 +16,14 @@ const Pokedex = () => {
   const registeredPokemons = useSelector(state => pokemonSelectors.registered(state.entities.pokemons));
 
   const search = (name) => {
+    if ( !name ) { alert('warning', 'Please enter pokemon name'); return };
     setLoading(true)
     dispatch(pokemonActions.search(name))
       .then((pokemon) => {
         setSearchedId(pokemon.id);
       })
       .catch(e => {
-        console.log(e)
-        let msg = e.response.status === 404 ? "Pokemon Not Found" :  "Something went wrong";
+        let msg = (e.respons && e.response.status === 404) ? "Pokemon Not Found" :  "Something went wrong";
         alert('error', msg);
       })
       .finally(_ => {
