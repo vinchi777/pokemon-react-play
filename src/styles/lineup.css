@@ -1,0 +1,26 @@
+/* LINEUP STYLES */
+.lineup-container .ant-card-body {
+  padding: 10px !important;
+} 
+
+.lineup-container .ant-col {
+  margin-bottom: 16px !important;
+  text-align: center;
+}
+
+.lineup-container .empty-entry-lineup {
+  padding-top: 100px;
+  font-size: 24px;
+  font-weight: 900px;
+  color: #bdbaba;
+  background: #e2e2e2;
+  height: 217px;
+}
+
+.lineup-header {
+  font-size: 24px;
+}
+
+.lineup-container .ant-card.active {
+  border: 2px solid #1890ff;
+}

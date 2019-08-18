@@ -1,0 +1,13 @@
+.preview-header {
+  font-size: 24px;
+}
+
+.preview-container .ant-col {
+  margin-bottom: 10px;
+}
+
+.preview-container label {
+  font-weight: 700;
+  color: #949494;
+}
+

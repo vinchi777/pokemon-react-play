@@ -1,0 +1,19 @@
+
+
+.pokedex-wrapper .pokemon-abilities,.pokemon-forms,.pokemon-details {
+  margin-bottom: 30px;
+}
+
+.pokedex-wrapper .pokemon-details span{
+  float: right;
+  margin-right: 20px;
+}
+
+.pokedex-wrapper .pokemon-details label{
+  font-weight: 700;
+  color: #949494;
+}
+
+.pokedex-wrapper .pokemon-name {
+  text-transform: uppercase;
+}
