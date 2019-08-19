@@ -119,9 +119,13 @@ const Pokedex = () => {
               )) }
             </Col>
             <Col span={24} style={{ margin: "30px 0px", textAlign: "center" }}>
-              { !pokemons.byId[searchedId]["registered"] && <Button onClick={register} size="large" type="primary" block> Add to Lineup</Button> }
+              { !pokemons.byId[searchedId]["registered"] && (
+                <Button onClick={register} size="large" type="primary" block> Add to Lineup</Button>
+              )  }
               { pokemons.byId[searchedId]["registered"] && <Alert message="Added to Lineup" type="success"/> }
-              { pokemons.byId[searchedId]["registered"] && <Button style={{ marginTop: "10px" }} onClick={unregister} type="danger" ghost> Remove </Button> }
+              { pokemons.byId[searchedId]["registered"] && (
+                <Button style={{ marginTop: "10px" }} onClick={unregister} type="danger" ghost> Remove </Button> 
+              ) }
             </Col>
           </Row>
         }
@@ -140,4 +144,4 @@ const Pokedex = () => {
   )
 };
 
-export default Pokedex
+export default Pokedex;
