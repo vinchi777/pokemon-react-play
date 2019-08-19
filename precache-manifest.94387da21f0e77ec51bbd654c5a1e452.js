@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3ce0b4b8ac1615a914c065d2a48e8bff",
+    "revision": "3420c2aece7d7551fa834b9cf6fe9ac8",
     "url": "/pokemon-react-play/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pokemon-react-play/static/css/2.e8d046a2.chunk.css"
   },
   {
-    "revision": "f348e57f5573c093df2c",
-    "url": "/pokemon-react-play/static/css/main.1b681387.chunk.css"
+    "revision": "fd062ece92f95ff1661c",
+    "url": "/pokemon-react-play/static/css/main.e7e9e7a1.chunk.css"
   },
   {
     "revision": "e7cdf0ddce9674046f5b",
     "url": "/pokemon-react-play/static/js/2.473c884f.chunk.js"
   },
   {
-    "revision": "f348e57f5573c093df2c",
-    "url": "/pokemon-react-play/static/js/main.9d14008b.chunk.js"
+    "revision": "fd062ece92f95ff1661c",
+    "url": "/pokemon-react-play/static/js/main.ff49d8b5.chunk.js"
   },
   {
     "revision": "a4f844c0aa8275ba4405",
