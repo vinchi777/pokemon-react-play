@@ -2,9 +2,11 @@ You can visit the site here [Pokemon League](https://vinchi777.github.io/pokemon
 
 ## SETUP
 
-### `yarn install`
+## `yarn install`
 
-### `yarn start`
+## `yarn start`
+
+## `thats all folks`
 
 ## DEPLOYMENT
 
