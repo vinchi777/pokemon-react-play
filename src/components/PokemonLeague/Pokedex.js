@@ -1,9 +1,15 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { pokemonActions } from 'modules/entities/pokemons';
-import { Divider, Card, Alert, notification, Progress, Tag, Row, Col, Input, Button, Spin, Avatar } from 'antd';
 import { pokemonSelectors } from 'modules/entities/pokemons';
 import { pageActions } from 'modules/pages/pokemonLeague';
+import {
+  Icon, Divider, Card,
+  Alert, notification,
+  Progress, Tag, Row,
+  Col, Input, Button,
+  Spin, Avatar
+} from 'antd';
 import 'styles/pokedex.css';
 
 const { Search } = Input;
@@ -23,8 +29,8 @@ const Pokedex = () => {
         setSearchedId(pokemon.id);
       })
       .catch(e => {
-        let msg = (e.respons && e.response.status === 404) ? "Pokemon Not Found" :  "Something went wrong";
-        alert('error', msg);
+        const message = (e.response && e.response.status === 404) ? "Pokemon Not Found" :  "Something went wrong";
+        notification['error']({ message })
       })
       .finally(_ => {
         setLoading(false);
@@ -33,7 +39,7 @@ const Pokedex = () => {
 
   const register = () => {
     if (registeredPokemons.length >= 6) {
-      alert('error', 'Pokemon Lineup Full');
+      notification['error']({ message: 'Pokemon Lineup Full' });
     } else {
       const pokemon = pokemons.byId[searchedId]
       pokemon['registered'] = true;
@@ -46,12 +52,6 @@ const Pokedex = () => {
     pokemon['registered'] = false;
     dispatch(pokemonActions.setItem({ [pokemon.id]: pokemon }));
     dispatch(pageActions.preview(null));
-  }
-
-  const alert = (type, msg) => {
-    notification[type]({
-      message: msg,
-    })
   }
 
   return (
@@ -129,6 +129,7 @@ const Pokedex = () => {
           !pokemons.byId[searchedId] &&
             <Row align="middle" justify="center" type="flex" style={{minHeight: '500px'}}>
               <Col span={24} align="center">
+                <Icon type="qq" className="pokemon-placeholder-icon"/>
                 <h1>POKEDEX</h1>
                 <p>Search your best pokemons and add them to your lineup</p>
               </Col>

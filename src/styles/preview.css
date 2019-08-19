@@ -11,3 +11,10 @@
   color: #949494;
 }
 
+.preview-container .empty-form{
+  background-color: #e2e2e2;
+  color: #989898;
+  padding-top: 80px;
+  text-align: center;
+  min-height: 200px;
+}

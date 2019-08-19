@@ -17,3 +17,7 @@
 .pokedex-wrapper .pokemon-name {
   text-transform: capitalize;
 }
+.pokedex-wrapper .pokemon-placeholder-icon {
+  font-size: 80px;
+  color: #BEBEBE;
+}

@@ -66,6 +66,13 @@ const Preview = () => {
           </Row>
         </form>
       )  }
+      { !pageState.currentPreview && (
+        <Col span={24}>
+          <div className="empty-form">
+            <p> Change pokemon data from your lineup. </p>
+          </div>
+        </Col>
+      ) }
     </div>
   )
 };
